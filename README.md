@@ -17,6 +17,7 @@ dowload executable, fill out twitch bot data and start.
 - Copy Client-ID in the .env "TWITCH_CLIENTID"
 - Copy Client-Secret in the .env "TWITCH_SECRET"
 - Edit "TWITCH_BOT_LOGIN_NAME" and "TWITCH_LOGIN_NAME". If you are running the bot as your normal Twitch User, you need to put your name in both. 
+- go to http://localhost:7001/ this should redirect you to twitch. accept your own application and you should get redirected to a Success page. restart the bot once and you are done. You should now see ```Connected to Twitch IRC!``` in the console
 - Edit the other stuff as you please. See .env below for help
 
 You should be ready to go. Run the tool and it should connect to the Twitch IRC and Streamcompanion / gosumemory. 
