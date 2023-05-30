@@ -12,7 +12,7 @@ dowload executable, fill out twitch bot data and start.
 - Start executable once. It will generate a .env file. 
 - The .env is mostly pre-filled. If you never changes settings on gosu / streamcompanion then you are good to go!
 - go to https://dev.twitch.tv/console/ and register a Application
-- if you use the pre-filled .env then the "OAuth Redirect URLs" should be "https://localhost:7001"
+- if you use the pre-filled .env then the "OAuth Redirect URLs" should be "https://localhost:7001/redirect"
 - After you proceed you see a list of applications (or just one). Edit it and click on new Secret. 
 - Copy Client-ID in the .env "TWITCH_CLIENTID"
 - Copy Client-Secret in the .env "TWITCH_SECRET"
