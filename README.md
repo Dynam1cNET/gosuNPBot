@@ -8,7 +8,7 @@ dowload executable, fill out twitch bot data and start.
 
 
 ### Setup: 
-- Download precompiled executable from releases.
+- Download precompiled executable from [releases](https://github.com/Dynam1cNET/gosuNPBot/releases/).
 - Start executable once. It will generate a .env file. 
 - The .env is mostly pre-filled. If you never changes settings on gosu / streamcompanion then you are good to go!
 - go to https://dev.twitch.tv/console/ and register a Application
