@@ -68,14 +68,14 @@ func twitch() {
 		var c = evtwebsocket.Conn{
 			OnConnected: func(w *evtwebsocket.Conn) {
 				authToken := twitchToken.AccessToken
-				chatUser := fmt.Sprintf("#%s", os.Getenv("TWITCH_STREAMER_LOGIN_NAME"))
+				chatUser := fmt.Sprintf("#%s", strings.ToLower(os.Getenv("TWITCH_STREAMER_LOGIN_NAME")))
 
 				setAuthToken := evtwebsocket.Msg{
 					Body: []byte(fmt.Sprintf("PASS oauth:%s", authToken)),
 				}
 
 				setUsername := evtwebsocket.Msg{
-					Body: []byte(fmt.Sprintf("NICK %s", os.Getenv("TWITCH_BOT_LOGIN_NAME"))),
+					Body: []byte(fmt.Sprintf("NICK %s", strings.ToLower(os.Getenv("TWITCH_BOT_LOGIN_NAME")))),
 				}
 
 				reqTags := evtwebsocket.Msg{
