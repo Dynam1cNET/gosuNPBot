@@ -149,7 +149,7 @@ func messageHandler(msg []byte, w *evtwebsocket.Conn) {
 		message := messageGroups[parseMessage.SubexpIndex("message")]
 		channel := messageGroups[parseMessage.SubexpIndex("channel")]
 		if strings.HasPrefix(message, fmt.Sprintf("%s%s", os.Getenv("TWITCH_COMMAND_PREFIX"), os.Getenv("TWITCH_NOW_PLAYING"))) {
-			//Now Playing
+			//Now Playingg
 			sendMessage := evtwebsocket.Msg{
 				Body: []byte(fmt.Sprintf("@reply-parent-msg-id=%s PRIVMSG %s : %s", messageID, channel, fmt.Sprintf("Now Playing: %s", NowPlaying))),
 			}
